@@ -1,4 +1,4 @@
-lettering
-=========
+Angular-JS and PubNub Sample Application
+=========================
 
-lettering
+You can type any text of the screen.

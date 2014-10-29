@@ -1,0 +1,26 @@
+.container
+  %section.chat-section#chat_application
+    .container
+      .row.lettering-area
+        .col-md-3
+          %ul.list-unstyled
+            %li(ng-repeat="score in scores")
+              .score-label
+                {{score.score}}
+              %span.label.btn-mini.userlabel(ng-class="{'label-default': score.user != data.username, 'label-info': (score.user == data.username)}" title='(Location: {{userData[user].city || "unknown"}})')
+                %i.fa.fa-user
+                {{score.user}}
+        .col-md-8
+          .lettering-content
+            .lettering-object(ng-repeat="object in objects" ng-style="{'position':'absolute', 'left':object.x + 'px', 'top': object.y + 'px' }")
+              {{object.string}}
+        .col-md-1
+      .row.typing-area
+        .col-md-3
+        .col-md-8
+          %form(ng-submit='submit_lettering()')
+            .input-group
+              %input.input-sm.form-control(type="text" ng-model='me_letter')
+              %span.input-group-btn
+                %input.input-sm.btn.btn-default(type='submit' value='Send')
+        .col-md-1

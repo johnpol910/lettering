@@ -1,0 +1,79 @@
+@media (max-width: 767px)
+{
+    body {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+.chatbox {
+  font-family:Lato;
+  width:100%;
+  height:20em;
+  margin-top:6px;
+  overflow:scroll;
+}
+
+.userlabel {
+  margin-right:8px;
+  margin-top:6px;
+}
+
+.roomlabel {
+  margin-right:8px;
+  margin-top:6px;
+}
+
+#getting_started {
+  background-color:;
+}
+
+.brandP {
+  padding-top:20px;
+}
+
+.padding-20 {
+  padding:20px;
+}
+
+.container{
+  top: 100px;
+}
+
+.lettering-area{
+  margin-top: 50px;
+}
+
+.lettering-content{
+  width: 100%;
+  height: 300px;
+  border: solid 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.lettering-object{
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  border-width: 0px;
+  border-style: solid;
+  border-color: red;
+
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;  
+  color: white;
+  text-shadow: 2px 2px 2px #000;
+  box-sizing:border-box;
+}
+
+.score-label{
+  font-size: 12px;
+  color: black;
+  width: 31px;
+  position: relative;
+  line-height: 31px;
+  display: inline-block;
+}
